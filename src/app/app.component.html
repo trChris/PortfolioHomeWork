@@ -1,0 +1,23 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Portfolio</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact: true}">
+        <a routerLink="/">Home</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/study">Study</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/experience">Experience</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div>
+  <router-outlet></router-outlet>
+</div>
